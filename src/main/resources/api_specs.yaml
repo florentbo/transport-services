@@ -4,12 +4,11 @@ info:
   title: Transports specification
   license:
     name: MIT
-servers:
-  - url: http://petstore.swagger.io/v1
 paths:
   /places:
     get:
       summary: List all the places
+      operationId:
       tags:
         - places
       responses:
@@ -76,8 +75,9 @@ components:
           format: int64
         name:
           type: string
-        tag:
+        postedDate:
           type: string
+          format: date
     Places:
       type: array
       maxItems: 100

@@ -5,6 +5,7 @@ import be.bonamis.transport.model.Place;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -14,6 +15,7 @@ public class GreetingController implements PlacesApi {
     public ResponseEntity<List<Place>> placesGet() {
         Place place = new Place();
         place.setId(99L);
+        place.setPostedDate(LocalDate.of(2023,11,15));
         return ResponseEntity.ok(List.of(place));
     }
 
