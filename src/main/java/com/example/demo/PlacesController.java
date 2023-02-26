@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RestController
-public class GreetingController implements PlacesApi {
+public class PlacesController implements PlacesApi {
 
     @Override
     public ResponseEntity<List<Place>> placesGet() {
