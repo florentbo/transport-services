@@ -7,8 +7,7 @@ info:
 paths:
   /places:
     get:
-      summary: List all the places
-      operationId:
+      summary: List all the places     
       tags:
         - places
       responses:
