@@ -15,6 +15,7 @@ public class PlacesController implements PlacesApi {
     public ResponseEntity<List<Place>> placesGet() {
         Place place = new Place();
         place.setId(99L);
+        place.setName("dummy name");
         place.setPostedDate(LocalDate.of(2023,11,15));
         return ResponseEntity.ok(List.of(place));
     }
