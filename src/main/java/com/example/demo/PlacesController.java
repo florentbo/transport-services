@@ -13,7 +13,7 @@ public class PlacesController implements PlacesApi {
   public ResponseEntity<List<Place>> findPlaces() {
     Place place = new Place();
     place.setId(99L);
-    place.setName("dummy name");
+    place.setName("dummy name 3.2.2");
     place.setPostedDate(LocalDate.of(2023, 11, 15));
     return ResponseEntity.ok(List.of(place));
   }
