@@ -7,7 +7,8 @@ info:
 paths:
   /places:
     get:
-      summary: List all the places     
+      summary: List all the places
+      operationId: findPlaces
       tags:
         - places
       responses:
@@ -25,6 +26,7 @@ paths:
                 $ref: "#/components/schemas/Error"
     post:
       summary: Create a place
+      operationId: createPlace
       tags:
         - places
       responses:
@@ -39,6 +41,7 @@ paths:
   /places/{placeId}:
     get:
       summary: Info for a specific place
+      operationId: getPlaceBydId
       tags:
         - places
       parameters:
